@@ -1,27 +1,24 @@
+import Image from "next/image";
+
 const games = [
   {
     title: "Project Makeover",
     image: "/images/project-makeover.png",
-    studio: "Magic Tavern",
-    roles: ["Lead Writer", "Lead Narrative Designer"],
+    roles: ["Lead Writer", "Lead Game Designer"],
     notes:
-      "Creating characters and feel-good stories in the Project Makeover universe.",
+      "Collaborated with the team to create an immersive storyline and dynamic characters.",
+    longDescription:
+      "This game was an extensive project where I took part in crafting not just the main narrative but also helped in building an expansive world that players could explore. My role included designing lore, developing character backstories, and ensuring thematic consistency.",
   },
   {
     title: "Victory Belles",
     image: "/images/victory-belles.jpg",
-    studio: "Black Chicken Studios",
-    roles: ["Writer", "Editor"],
-    notes:
-      "Developed stories for a huge (+120) multinational cast of vivid characters. Researched for historical fidelity and technical accuracy.",
+    roles: ["Writer"],
+    notes: "Wrote multiple character stories with dialogue",
+    longDescription:
+      "As a Narrative Designer, I focused on creating a seamless story experience that tied quests into the overarching plot. Each quest was designed to challenge players while revealing critical details about the game world and its inhabitants.",
   },
-  {
-    title: "Beyond the Skies",
-    image: "/images/beyond-the-skies.jpg",
-    studio: "Starlight Interactive Games",
-    roles: ["Writer", "Narrative Designer"],
-    notes: "Flavor text for a 4X strategy game set in a hostile galaxy.",
-  },
+  // Add more game objects here
 ];
 
 export default function Games() {
@@ -35,26 +32,31 @@ export default function Games() {
               key={index}
               className="bg-[#112240] rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300 max-w-2xl mx-auto"
             >
-              <div className="aspect-w-16 aspect-h-9">
-                <img
+              <div className="aspect-w-16 aspect-h-9 relative">
+                <Image
                   src={game.image}
                   alt={game.title}
-                  className="w-full h-full object-cover"
+                  fill
+                  className="object-cover rounded-t-lg"
+                  sizes="(max-width: 768px) 100vw, 672px"
+                  priority={index === 0}
                 />
               </div>
               <div className="p-6">
-                <h2 className="text-2xl font-semibold text-[#E4E7EA]">
+                <h2 className="text-2xl font-semibold mb-4 text-[#E4E7EA]">
                   {game.title}
                 </h2>
-                <div className="text-base mb-4 text-[#AAB7C4]">
-                  {game.studio}
-                </div>
                 <div className="text-base mb-4 text-[#AAB7C4]">
                   <strong>Roles:</strong> {game.roles.join(", ")}
                 </div>
                 <p className="text-base text-[#C3CCD6] leading-relaxed">
                   {game.notes}
                 </p>
+                {game.longDescription && (
+                  <p className="text-base text-[#D4D9E1] mt-4">
+                    {game.longDescription}
+                  </p>
+                )}
               </div>
             </div>
           ))}
