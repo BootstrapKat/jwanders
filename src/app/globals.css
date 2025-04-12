@@ -17,23 +17,23 @@
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: "Afacad Flux", Helvetica, sans-serif;
+  font-family: "Afacad", sans-serif;
 }
 
 h1,
 h2,
 h3,
 .Afacad {
-  font-family: "Afacad Flux", serif;
+  font-family: "Afacad", sans-serif;
 }
 
 .Afacad-bold {
-  font-family: "Afacad Flux", serif;
+  font-family: "Afacad", sans-serif;
   font-weight: 700;
 }
 
 .Afacad-italic {
-  font-family: "Afacad Flux", serif;
+  font-family: "Afacad", sans-serif;
   font-style: italic;
 }
 

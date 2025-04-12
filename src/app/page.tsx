@@ -35,7 +35,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="container flex mx-auto items-center justify-center text-lg">
+      <section className="container flex mx-auto items-center justify-center text-lg font-afacad">
         <a
           href="https://www.linkedin.com/in/justinwilliamanderson/"
           target="_blank"

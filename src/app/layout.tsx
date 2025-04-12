@@ -25,7 +25,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={afacad.variable}>
-      <body className="antialiased min-h-screen flex flex-col bg-gradient-to-l from-black to-[#0A0F1B] text-[#E4E7EA]">
+      <body className="antialiased min-h-screen flex flex-col bg-gradient-to-l from-black to-[#0A0F1B] text-[#E4E7EA] font-afacad">
         <Navbar />
         <main className="flex-grow">{children}</main>
         <Footer />
