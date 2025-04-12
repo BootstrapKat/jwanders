@@ -17,7 +17,24 @@
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Afacad Flux", Helvetica, sans-serif;
+}
+
+h1,
+h2,
+h3,
+.Afacad {
+  font-family: "Afacad Flux", serif;
+}
+
+.Afacad-bold {
+  font-family: "Afacad Flux", serif;
+  font-weight: 700;
+}
+
+.Afacad-italic {
+  font-family: "Afacad Flux", serif;
+  font-style: italic;
 }
 
 @layer utilities {
