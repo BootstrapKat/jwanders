@@ -45,11 +45,11 @@ const Navbar = () => {
 
         {/* Menu for Desktop */}
         <div className="hidden md:flex space-x-4">
-          <Link href="/writing" className="hover:text-blue-400">
-            Writing
-          </Link>
           <Link href="/games" className="hover:text-blue-400">
             Games
+          </Link>
+          <Link href="/writing" className="hover:text-blue-400">
+            Writing
           </Link>
           <Link href="/radio" className="hover:text-blue-400">
             Radio
@@ -65,18 +65,18 @@ const Navbar = () => {
       >
         <div className="flex flex-col space-y-4 p-4">
           <Link
-            href="/writing"
-            onClick={() => setIsOpen(false)}
-            className="hover:text-blue-400"
-          >
-            Writing
-          </Link>
-          <Link
             href="/games"
             onClick={() => setIsOpen(false)}
             className="hover:text-blue-400"
           >
             Games
+          </Link>
+          <Link
+            href="/writing"
+            onClick={() => setIsOpen(false)}
+            className="hover:text-blue-400"
+          >
+            Writing
           </Link>
           <Link
             href="/radio"

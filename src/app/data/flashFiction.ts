@@ -1,7 +1,7 @@
 export type FlashFictionEntry = {
   slug: string;
   title: string;
-  timeToRead: string;
+  timeToRead?: string;
   quote: string;
   published?: {
     link: string;
@@ -12,6 +12,16 @@ export type FlashFictionEntry = {
 };
 
 export const flashFiction: FlashFictionEntry[] = [
+  {
+    slug: "dinnertime-blues",
+    title: "Dinnertime Blues",
+    timeToRead: "sci-fi flash fiction; 5 minutes to read",
+    quote: "‘Damn. Maybe tonight’s not salad night.’",
+    published: {
+      link: "https://www.scifishorts.co/premium/dinnertime-blues/5a7092c5-57db-4ee4-a172-f47c400fae9d",
+      source: "scifishorts.co",
+    },
+  },
   {
     slug: "the-boot",
     title: "The Boot",
@@ -39,5 +49,14 @@ export const flashFiction: FlashFictionEntry[] = [
     quote:
       "‘The first human FTL travel … was a timid step backwards to safety.’",
     pdf: "/stories/A_Minus_B_ws.pdf",
+  },
+  {
+    slug: "twines",
+    title: "Twine Collection",
+    quote: "A few short works of interactive fiction exploring various themes.",
+    published: {
+      link: "https://itch.io/profile/j-wanders",
+      source: "itch.io",
+    },
   },
 ];

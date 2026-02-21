@@ -10,6 +10,21 @@ const games = [
       "Creating characters and feel-good stories in the Project Makeover universe.",
   },
   {
+    title: "Skyrim: Lordbound",
+    image: "/images/skyrim-lordbound.png",
+    studio: "Lordbound Team",
+    roles: ["Writer", "Editor", "Voice Actor"],
+    notes:
+      "Provided NPC dialogue, copyediting and rewrites for in-game books and messages, and voice acting for 150+ lines of dialogue.",
+  },
+  {
+    title: "30 Minutes or Less",
+    image: "/images/30minutes-or-less.png",
+    studio: "GDevelop 3D Game Jam",
+    roles: ["Voice Actor", "Writer", "Fun Vibes"],
+    notes: "Fun little game jam project to deliver a pizza against all odds.",
+  },
+  {
     title: "Victory Belles",
     image: "/images/victory-belles.jpg",
     studio: "Black Chicken Studios",
@@ -23,7 +38,7 @@ const games = [
     studio: "Starlight Interactive Games",
     roles: ["Writer", "Narrative Designer"],
     notes:
-      "Flavor text and names for a 4X strategy game set in a hostile galaxy.",
+      "Wrote flavor text and names for a 4X strategy game set in a hostile galaxy.",
   },
 ];
 
