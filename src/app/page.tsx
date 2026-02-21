@@ -68,7 +68,7 @@ export default function Home() {
               Games
             </h2>
             <p className="text-sm text-[#E4E7EA] opacity-70 leading-relaxed">
-              Games I've worked on
+              Games I have worked on
             </p>
           </Link>
 
