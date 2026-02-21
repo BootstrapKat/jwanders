@@ -31,6 +31,9 @@ export default function Home() {
             <li className="relative pl-4 before:absolute before:left-0 before:top-full before:w-[84vw] before:border-t before:border-gray-300 before:opacity-40 tracking-[0.25em]">
               radio host
             </li>
+            <li className="relative pl-4 before:absolute before:left-0 before:top-full before:w-[84vw] before:border-t before:border-gray-300 before:opacity-40 tracking-[0.25em]">
+              submarine veteran
+            </li>
           </ul>
         </div>
       </section>
